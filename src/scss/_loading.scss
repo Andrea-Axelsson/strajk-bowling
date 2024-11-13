@@ -1,0 +1,25 @@
+.container-loading{
+    @include flex-center-column;
+    background: $primary-color-1;
+    height: 100vh;
+}
+
+.logo{
+    @include flex-center-column;
+    width: 80px;
+
+    &__title{
+        font-family: $font-title;
+        font-size: 5rem;
+        color: $primary-color-2;
+    }
+    
+    &__sub-title{
+        font-family: $font-body;
+        font-size: 1.25rem;
+        color: $secondary-color-1;
+        font-weight: 500;
+        letter-spacing: 10px;
+    }
+}
+

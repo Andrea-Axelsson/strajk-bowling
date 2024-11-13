@@ -1,0 +1,90 @@
+@import 'config';
+@import 'loading';
+@import 'booking';
+@import 'confirmation';
+@import 'menu';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-body;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $primary-color-1;
+    min-height: 100vh;
+}
+
+.content{
+    max-width: 500px;
+    width: 90%;
+    @include flex-center-column;
+    margin: 100px 0;
+    
+}
+
+.title{
+    font-family: $font-title;
+        font-size: 3.75rem;
+        color: $primary-color-2;
+        margin-bottom: 40px;
+        text-align: center;
+}
+
+.text-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.text-line::before,
+.text-line::after {
+    content: "";
+    width: 50px; /* Bestämd bredd på linjerna */
+    height: 1px; /* Bestämd höjd på linjen */
+    background-color: $secondary-color-1; /* Färg på linjen */
+    margin: 0 10px; /* Avstånd mellan linjerna och texten */
+}
+
+.text-line span {
+    font-family: $font-title;
+        font-size: 1.5rem;
+        color: $secondary-color-1;
+}
+
+.text-line-shoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.text-line-shoes::before,
+.text-line-shoes::after {
+    content: "";
+    width: 50px; /* Bestämd bredd på linjerna */
+    height: 1px; /* Bestämd höjd på linjen */
+    background-color: $secondary-color-1; /* Färg på linjen */
+    margin: 0 10px; /* Avstånd mellan linjerna och texten */
+}
+
+.text-line-shoes span {
+    font-family: $font-title;
+        font-size: 1.5rem;
+        color: $secondary-color-1;
+}
+
+.navbar {
+    position: absolute;
+    align-self: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 5;
+  }

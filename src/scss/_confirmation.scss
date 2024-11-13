@@ -1,0 +1,14 @@
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border: solid 1px $primary-color-2;
+    border-radius: 5px;
+    background: $primary-color-1;
+    font-size: 1.5rem;
+    color: $primary-color-2;
+    margin-top: 1.25em;
+
+}

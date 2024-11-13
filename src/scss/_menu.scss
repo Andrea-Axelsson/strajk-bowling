@@ -1,0 +1,30 @@
+.menu__container {
+    @include flex-center-column;
+    position: fixed; /* Ändrat från absolute till fixed */
+    top: 0;
+    left: 0;
+    background: $secondary-color-2;
+    height: 100vh;
+    width: 100vw; /* För att täcka hela skärmen */
+    z-index: 4; /* Placera ovanpå andra element */
+  }
+  
+  .menu__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .menu__content h2 {
+    color: $primary-color-2;
+    font-family: $font-title;
+    font-size: 3rem;
+  }
+  
+  .no-underline {
+    text-decoration: none;
+  }

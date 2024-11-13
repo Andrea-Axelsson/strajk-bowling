@@ -1,0 +1,75 @@
+form{
+    width: 100%;
+    @include flex-center-column;
+}
+
+
+.input-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
+
+.input-label{
+    background: $primary-color-1;
+    padding: 0 5px;
+    display: inline;
+    left: 15px;
+    top: -6px;
+    position: absolute;
+    font-size: .75rem;
+    color: $secondary-color-1
+    
+}
+
+.input{
+    padding: 10px;
+    border: solid 1px $secondary-color-1;
+    border-radius: 5px;
+    background: $primary-color-1;
+    font-size: 1.5rem;
+
+}
+
+.submit{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: $primary-color-2;
+    color: $secondary-color-3;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.link-wrapper {
+    display: block;
+    width: 100%;
+  }
+
+.submit:hover{
+    background-color: #851b32;
+}
+
+
+.error{
+    color: $primary-color-2;
+    margin-top: 1.25em;
+}

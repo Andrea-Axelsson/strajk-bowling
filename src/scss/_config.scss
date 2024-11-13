@@ -1,0 +1,21 @@
+/* Colors */
+
+$primary-color-1: #fff4f1;
+$primary-color-2: #EC315A;
+$secondary-color-1: #441D81;
+$secondary-color-2: #222222;
+$secondary-color-3: #fff;
+
+/* Fonts */
+
+$font-title: "Bebas Neue", sans-serif;
+$font-body: "Work Sans", sans-serif;
+
+/* mixins */
+
+@mixin flex-center-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
